@@ -3,7 +3,7 @@
 const loginForm = document.querySelector(".login-form");
 
 loginForm.addEventListener("submit", function (event) {
-  event.preventDefault(); // Opriți comportamentul implicit de reîncărcare a paginii la submit
+  event.preventDefault(); 
 
   const formData = event.target.elements; // Accesarea elementelor formularului
 
@@ -26,7 +26,6 @@ loginForm.addEventListener("submit", function (event) {
     }
 
     console.log(formValues);
-
     loginForm.reset();
   }
 });
